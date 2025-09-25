@@ -102,14 +102,14 @@ const ComposeNewMail = () => {
 							)
 							const data = await res.json()
 							console.log(data)
-						} catch (e: any) {
-							console.error('Walrus write failed:', e)
+						} catch () {
+							console.error('Walrus write failed:')
 							return
 						}
 
 						return
-					} catch (err: any) {
-						console.error('General error in :', err)
+					} catch () {
+						console.error('General error in :')
 						return err
 					}
 				},
